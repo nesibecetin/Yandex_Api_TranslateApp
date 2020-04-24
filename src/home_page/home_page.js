@@ -32,7 +32,7 @@ checkLoading = () => {
     </View>;
   } else {
     return <View style={styles.progressStyle}>
-      <Text>loading</Text>
+      <Text>Loading</Text>
     </View>;
   }
 }

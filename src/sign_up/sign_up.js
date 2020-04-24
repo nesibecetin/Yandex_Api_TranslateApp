@@ -25,7 +25,7 @@ updateInputVal = (val, prop) => {
 
   registerUser = () => {
     if(this.state.mail === '' && this.state.password === '') {
-      Alert.alert('Enter details to signup!')
+      Alert.alert('Boş Geçilemez')
     } else {
       this.setState({
         isLoading: true,
@@ -38,7 +38,7 @@ updateInputVal = (val, prop) => {
         res.user.updateProfile({
             displayName: this.state.displayName
         })
-        console.log('User registered successfully!')
+        console.log('Kayıt Başarılı')
         this.setState({
           isLoading: false,
           username: '',

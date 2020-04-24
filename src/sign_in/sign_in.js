@@ -21,7 +21,7 @@ updateInputVal = (val, prop) => {
 
   userLogin = () => {
     if(this.state.mail === '' && this.state.password === '') {
-      Alert.alert('Enter details to signin!')
+      Alert.alert('Boş geçilemez.')
     } else {
       this.setState({
         isLoading: true,
@@ -31,7 +31,7 @@ updateInputVal = (val, prop) => {
       .signInWithEmailAndPassword(this.state.mail, this.state.password)
       .then((res) => {
         console.log(res)
-        console.log('User logged-in successfully!')
+        console.log('Giriş Başarılı')
         this.setState({
           isLoading: false,
           mail: '', 
@@ -129,4 +129,7 @@ const styles = StyleSheet.create({
     
     
   },
+  loginText:{
+    color:'#fff',
+  }
 });
