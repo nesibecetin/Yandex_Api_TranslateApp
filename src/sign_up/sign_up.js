@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View,Text,Image,StyleSheet,TextInput, Button,KeyboardAvoidingView} from "react-native";
+import {View,Text,Image,StyleSheet,TextInput, Button,KeyboardAvoidingView,Alert} from "react-native";
 import LinearGradient from 'react-native-linear-gradient';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
